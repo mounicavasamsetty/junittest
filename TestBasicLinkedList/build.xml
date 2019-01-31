@@ -1,0 +1,45 @@
+<project name="TestBasicLinkedList" default="unit-test-1" basedir=".">
+
+     
+
+    <property name="src" location="src" />
+
+    <property name="build" location="build" />
+
+    <property name="dist" location="dist" />
+
+ 
+
+    <description>
+
+    simple example build file
+
+  </description>
+
+    <target name="unit-test-1">
+
+        <junit printsummary="yes" haltonfailure="yes">
+
+            <classpath>
+
+                <pathelement location="${project.class.path}" />
+
+                <pathelement location="${build.tests}" />
+
+                <pathelement path="${java.class.path}" />
+
+            </classpath>
+
+            <test name="sample.junit.assertequals.JUnitAssertEqualsExample" haltonfailure="no" outfile="result">
+
+                <formatter type="plain" />
+
+                <formatter type="xml" />
+
+            </test>
+
+        </junit>
+
+    </target>
+
+</project>
