@@ -15,31 +15,9 @@
     simple example build file
 
   </description>
+     <target>
+       <files-path path="defaultbuild.xml" name="defaultbuild.xml"/>
+     </target>
 
-    <target name="unit-test-1">
-
-        <junit printsummary="yes" haltonfailure="yes">
-
-            <classpath>
-
-                <pathelement location="${project.class.path}" />
-
-                <pathelement location="${build.tests}" />
-
-                <pathelement path="${java.class.path}" />
-
-            </classpath>
-
-            <test name="sample.junit.assertequals.JUnitAssertEqualsExample" haltonfailure="no" outfile="result">
-
-                <formatter type="plain" />
-
-                <formatter type="xml" />
-
-            </test>
-
-        </junit>
-
-    </target>
 
 </project>
